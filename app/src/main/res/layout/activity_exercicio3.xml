@@ -1,0 +1,154 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Campo para o nome -->
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="textPersonName"/>
+
+        <!-- Campo para a idade -->
+        <EditText
+            android:id="@+id/editTextIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Idade"
+            android:inputType="number"/>
+
+        <!-- Campo para a UF -->
+        <EditText
+            android:id="@+id/editTextUF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UF"
+            android:inputType="textCapCharacters"
+            android:maxLength="2"/>
+
+        <!-- Campo para a cidade -->
+        <EditText
+            android:id="@+id/editTextCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cidade"
+            android:inputType="textCapWords"/>
+
+        <!-- Campo para o telefone -->
+        <EditText
+            android:id="@+id/editTextTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="phone"/>
+
+        <!-- Campo para o email -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+        <!-- RadioGroup para o tamanho das roupas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamanho preferido:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupTamanho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonGG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GG"/>
+        </RadioGroup>
+
+        <!-- CheckBoxes para as cores preferidas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cores preferidas:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxPreto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preto"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxBranco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branco"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVermelho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vermelho"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azul"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verde"/>
+
+        <!-- Botão para cadastrar -->
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:layout_marginTop="16dp"/>
+
+        <!-- TextView para exibir o resultado do cadastro -->
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

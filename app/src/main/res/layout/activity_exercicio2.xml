@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para o primeiro número -->
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o primeiro número"
+        android:inputType="numberDecimal"/>
+
+    <!-- Campo para o segundo número -->
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o segundo número"
+        android:inputType="numberDecimal"/>
+
+    <!-- Botões para as operações -->
+    <Button
+        android:id="@+id/buttonSoma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/buttonSubtracao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/buttonMultiplicacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*"/>
+
+    <Button
+        android:id="@+id/buttonDivisao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/"/>
+
+    <!-- TextView para exibir o resultado -->
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textSize="18sp"
+        android:gravity="center"/>
+</LinearLayout>
